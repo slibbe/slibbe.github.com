@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Documentation on Slibbe&#39;s new Hugo site</title>
+    <link>http://blog.slibbe.org/categories/documentation/</link>
+    <description>Recent content in Documentation on Slibbe&#39;s new Hugo site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 30 Jun 2017 23:49:34 -0700</lastBuildDate>
+    
+	<atom:link href="http://blog.slibbe.org/categories/documentation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Example Configs</title>
+      <link>http://blog.slibbe.org/docs/example-configs/</link>
+      <pubDate>Fri, 30 Jun 2017 23:49:34 -0700</pubDate>
+      
+      <guid>http://blog.slibbe.org/docs/example-configs/</guid>
+      <description>To help you set up your site with BluestNight, you can download a template config.toml. If you use a server with Nginx, you can also download a template configuration file to place in /etc/nginx/conf.d/.
+If you have any experience writing configuration files for Apache servers or .htaccess files, please contribute to this issue on GitLab.</description>
+    </item>
+    
+    <item>
+      <title>Alert</title>
+      <link>http://blog.slibbe.org/docs/site/alert/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.slibbe.org/docs/site/alert/</guid>
+      <description>&lt;p&gt;Use an &lt;code&gt;alert&lt;/code&gt; if you need to make sure that your reader&amp;rsquo;s eye is brought to some important information before they get to the main content. You can have site-wide and page-specific alerts, which work the same except for where they are set.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Analytics</title>
+      <link>http://blog.slibbe.org/docs/site/analytics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.slibbe.org/docs/site/analytics/</guid>
+      <description>&lt;p&gt;BluestNight comes with support for &lt;a href=&#34;https://piwik.org/&#34;&gt;Piwik&lt;/a&gt; as an site analytics provider. This requires having a Piwik instance hosted somewhere, either &lt;a href=&#34;https://piwik.org/download/&#34;&gt;self-hosted&lt;/a&gt; or &lt;a href=&#34;https://www.innocraft.cloud/&#34;&gt;hosted by Innocraft&lt;/a&gt;. The theme uses the &lt;a href=&#34;https://developer.piwik.org/guides/tracking-javascript-guide&#34;&gt;JavaScript tracking client&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Appearance</title>
+      <link>http://blog.slibbe.org/docs/site/appearance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.slibbe.org/docs/site/appearance/</guid>
+      <description>Custom Background Add the following to your site&amp;rsquo;s config.toml file:
+[Params.background] src = &amp;quot;images/background_lg.png&amp;quot; #medium_src = &amp;quot;images/background_med.png&amp;quot; #small_src = &amp;quot;images/background_sm.png&amp;quot; fit_width = true tile = false   Change src to the relative path from the site&amp;rsquo;s baseURL where the background image can be found. In the above example, the file would be found at {site root}/static/images/background.png. Optionally set medium_src and small_src to smaller images to use on screens that are at most 1024px and 640px, respectively.</description>
+    </item>
+    
+    <item>
+      <title>Authorbox</title>
+      <link>http://blog.slibbe.org/docs/pages/authorbox/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.slibbe.org/docs/pages/authorbox/</guid>
+      <description>&lt;p&gt;Use the authorbox to provide attribution to the author of a post or page.&lt;/p&gt;
+
+&lt;p&gt;The authorbox feature is based on the &lt;a href=&#34;shortcodes/members&#34;&gt;&lt;code&gt;member&lt;/code&gt; shortcode&lt;/a&gt; and requires the same &lt;a href=&#34;shortcodes/members#setup&#34;&gt;setup&lt;/a&gt; in order to work.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; if the &lt;code&gt;URL&lt;/code&gt; key is set in the author&amp;rsquo;s data file, the &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt; tag linking to the URL will have the &lt;code&gt;rel=&amp;quot;author&amp;quot;&lt;/code&gt; attribute set on it.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Category List</title>
+      <link>http://blog.slibbe.org/docs/sidebar/category-list/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.slibbe.org/docs/sidebar/category-list/</guid>
+      <description>&lt;p&gt;Add a list of your five most common categories to the sidebar.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Comments</title>
+      <link>http://blog.slibbe.org/docs/pages/comments/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.slibbe.org/docs/pages/comments/</guid>
+      <description>&lt;p&gt;BluestNight currently supports two comment providers:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;comments/hashover&#34;&gt;HashOver&lt;/a&gt;, a self-hosted provider using PHP&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;comments/muut&#34;&gt;Muut&lt;/a&gt;, a third-party service using only JavaScript&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This page details options that apply regardless of which service you are using.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Customize List Pages</title>
+      <link>http://blog.slibbe.org/docs/pages/custom-list-pages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.slibbe.org/docs/pages/custom-list-pages/</guid>
+      <description>&lt;p&gt;BluestNight provides a number of ways for you to customize &lt;a href=&#34;https://gohugo.io/templates/list/&#34;&gt;list pages&lt;/a&gt; using &lt;a href=&#34;https://gohugo.io/content/using-index-md/&#34;&gt;&lt;code&gt;_index.md&lt;/code&gt;&lt;/a&gt; files.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Events</title>
+      <link>http://blog.slibbe.org/docs/sidebar/events/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.slibbe.org/docs/sidebar/events/</guid>
+      <description>&lt;p&gt;You have a list of events you want to share with your reader base - why not display them on your site?&lt;/p&gt;
+
+&lt;p&gt;BluestNight provides both a sidebar widget to display the 5 earliest occurring events listed and a template for a &lt;code&gt;.ics&lt;/code&gt; calendar file that readers can subscribe to.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Handwriting Fonts</title>
+      <link>http://blog.slibbe.org/docs/shortcodes/handwriting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.slibbe.org/docs/shortcodes/handwriting/</guid>
+      <description>&lt;p&gt;Sometimes (sans-)serif fonts just don&amp;rsquo;t cut it for what you&amp;rsquo;re writing. You&amp;rsquo;re posting a letter on your website and want it to look handwritten, or at least have the signature look handwritten. The &lt;code&gt;handwriting&lt;/code&gt; shortcode provides you with a number of available handwriting fonts to achieve this effect.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Link To Static Files</title>
+      <link>http://blog.slibbe.org/docs/shortcodes/static/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.slibbe.org/docs/shortcodes/static/</guid>
+      <description>(Examples use a file at /static/path/to/image.jpg)
+There&amp;rsquo;s a limitation with the way links are created in markdown. In order to link to static files in content files, we need to either:
+ Write a path relative to the current directory, with ../ and the like, so a file at content/section/subsection/page.md would need ../../../path/to/image.jpg
+ Prefix the path with a leading /, which causes the path to resolve to example.com/path/to/image.jpg
+  The first is a pain to have to do, and the second only works if the baseURL of your Hugo site is example.</description>
+    </item>
+    
+    <item>
+      <title>Members</title>
+      <link>http://blog.slibbe.org/docs/shortcodes/members/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.slibbe.org/docs/shortcodes/members/</guid>
+      <description>&lt;p&gt;Looking to put together a nice Members page for your site, but don&amp;rsquo;t want to write a bunch of custom HTML to make it look good?&lt;/p&gt;
+
+&lt;p&gt;Just use the &lt;code&gt;{{&amp;lt;/* member */&amp;gt;}}&lt;/code&gt; shortcode!&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Netlify Forms</title>
+      <link>http://blog.slibbe.org/docs/pages/netlify-forms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.slibbe.org/docs/pages/netlify-forms/</guid>
+      <description>&lt;p&gt;If you are using &lt;a href=&#34;https://netlify.com&#34;&gt;Netlify&lt;/a&gt; to host your Hugo site, BluestNight supports creating &lt;a href=&#34;https://www.netlify.com/docs/form-handling/&#34;&gt;Netlify-compatible&lt;/a&gt; forms in your content files through the use of a few shortcodes.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Page Navigation</title>
+      <link>http://blog.slibbe.org/docs/pages/next-prev-page/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.slibbe.org/docs/pages/next-prev-page/</guid>
+      <description>&lt;p&gt;BluestNight supports using the Hugo built-in &lt;code&gt;NextInSection&lt;/code&gt; and &lt;code&gt;PrevInSection&lt;/code&gt; [page variables] to provide &amp;ldquo;next&amp;rdquo; and &amp;ldquo;previous&amp;rdquo; links to the next and previous page in the same &lt;a href=&#34;https://gohugo.io/content/sections/&#34;&gt;section&lt;/a&gt;. On its own, this works great for linking a reader to next oldest or newest post from the one they have just finished reading.&lt;/p&gt;
+
+&lt;p&gt;Sometimes you want a specific order to your pages, though, and that&amp;rsquo;s not the one that Hugo gives you. So, BluestNight also gives you the option to specify a custom content file to use as the &amp;ldquo;next&amp;rdquo; or &amp;ldquo;previous&amp;rdquo; page, as well as the ability to not show one or both buttons, even if there is a valid &amp;ldquo;next&amp;rdquo; or &amp;ldquo;previous&amp;rdquo; page.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Patreon Banner</title>
+      <link>http://blog.slibbe.org/docs/sidebar/patreon-banner/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.slibbe.org/docs/sidebar/patreon-banner/</guid>
+      <description>&lt;p&gt;Have a Patreon account? Add a Patreon banner to the sidebar of your site that links to it!&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Recent Posts</title>
+      <link>http://blog.slibbe.org/docs/sidebar/recent-posts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.slibbe.org/docs/sidebar/recent-posts/</guid>
+      <description>&lt;p&gt;Display your most recent posts in the sidebar!&lt;/p&gt;
+
+&lt;p&gt;The recent article sidebar widget displays the ten most recent pages under the &lt;code&gt;post&lt;/code&gt; &lt;a href=&#34;http://gohugo.io/content/sections/&#34;&gt;section&lt;/a&gt;, as well as buttons to subscribe to the RSS feeds of the whole site and the current section or taxonomy (tag/category).&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Responsive Tables</title>
+      <link>http://blog.slibbe.org/docs/pages/responsive-tables/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.slibbe.org/docs/pages/responsive-tables/</guid>
+      <description>The markdown processor bundled with Hugo has the ability to parse markdown tables, but these tables are not mobile-friendly (like most tables).
+This didn&amp;rsquo;t work well for me, since my markdown tables were rendering poorly on mobile devices due to automatic content sizing. More often than not, the table ended up overflowing and looking unprofessional. So I put together a set of shortcodes to help create tables that would shift around on small screens to be more readable.</description>
+    </item>
+    
+    <item>
+      <title>Search</title>
+      <link>http://blog.slibbe.org/docs/sidebar/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.slibbe.org/docs/sidebar/search/</guid>
+      <description>&lt;p&gt;BluestNight offers client-side searching powered by &lt;a href=&#34;https://lunrjs.com&#34;&gt;Lunr.js&lt;/a&gt;. This searching is powered by a JSON index of your site&amp;rsquo;s content pages - this does not include any list pages, even ones &lt;a href=&#34;pages/customize-list-pages&#34;&gt;customized using &lt;code&gt;_index.md&lt;/code&gt;&lt;/a&gt;. Results are displayed as you type, allowing users to quickly find what they are looking for.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Social Icons</title>
+      <link>http://blog.slibbe.org/docs/site/social-icons/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.slibbe.org/docs/site/social-icons/</guid>
+      <description>&lt;p&gt;Social icons are an easy way to link viewers of your site to other parts of your online presence, such as to your Facebook, Twitter, LinkedIn, GitHub, and more. The complete list is below.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Summaries</title>
+      <link>http://blog.slibbe.org/docs/pages/summaries/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.slibbe.org/docs/pages/summaries/</guid>
+      <description>&lt;p&gt;Hugo &lt;a href=&#34;https://gohugo.io/content/summaries/&#34;&gt;provides a mechanism&lt;/a&gt; for extracting the first part of a page&amp;rsquo;s content to serve as a &amp;ldquo;summary&amp;rdquo; of the content. This works if the first bit of content serves as a good summary of the rest of the page. Sometimes, though, it doesn&amp;rsquo;t. There&amp;rsquo;s no built-in method for providing your own text as a &amp;ldquo;summary&amp;rdquo; - but there is in BluestNight.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Tag List</title>
+      <link>http://blog.slibbe.org/docs/sidebar/tag-list/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.slibbe.org/docs/sidebar/tag-list/</guid>
+      <description>&lt;p&gt;Show a cloud of the tags you&amp;rsquo;ve used on the site in your sidebar.&lt;/p&gt;
+
+&lt;p&gt;This widget currently shows all of the tags used on the website, in order of how often they are used (most common listed first, etc.) You can optionally enable showing how many times the tag has been used.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
