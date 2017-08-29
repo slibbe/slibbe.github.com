@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Documentation on Slibbe&#39;s new Hugo site</title>
+    <link>http://blog.slibbe.org/docs/</link>
+    <description>Recent content in Documentation on Slibbe&#39;s new Hugo site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 30 Jun 2017 23:49:34 -0700</lastBuildDate>
+    
+	<atom:link href="http://blog.slibbe.org/docs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Example Configs</title>
+      <link>http://blog.slibbe.org/docs/example-configs/</link>
+      <pubDate>Fri, 30 Jun 2017 23:49:34 -0700</pubDate>
+      
+      <guid>http://blog.slibbe.org/docs/example-configs/</guid>
+      <description>To help you set up your site with BluestNight, you can download a template config.toml. If you use a server with Nginx, you can also download a template configuration file to place in /etc/nginx/conf.d/.
+If you have any experience writing configuration files for Apache servers or .htaccess files, please contribute to this issue on GitLab.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comments</title>
+
+    
+    <link rel="dns-prefetch" href="https://maxcdn.bootstrapcdn.com/" />
+    <link rel="preconnect" href="https://maxcdn.bootstrapcdn.com/" />
+    <link rel="dns-prefetch" href="https://unpkg.com/" />
+    <link rel="preconnect" href="https://unpkg.com/" />
+    
+    <link rel="prefetch" href="https://unpkg.com/lunr/lunr.js" />
+    <link rel="prefetch" href="http://blog.slibbe.org/js/search.min.js" />
+    <link rel="prefetch" href="http://blog.slibbe.org/index.json" />
+    <meta name="description" itemprop="description" content="&lt;p&gt;BluestNight currently supports two comment providers:&lt;/p&gt;  &lt;ul&gt; &lt;li&gt;&lt;a href=&#34;comments/hashover&#34;&gt;HashOver&lt;/a&gt;, a self-hosted provider using PHP&lt;/li&gt; &lt;li&gt;&lt;a href=&#34;comments/muut&#34;&gt;Muut&lt;/a&gt;, a third-party service using only JavaScript&lt;/li&gt; &lt;/ul&gt;  &lt;p&gt;This page details options that apply regardless of which service you are using.&lt;/p&gt;  &lt;p&gt;&lt;/p&gt;" id="desc"><meta name="generator" content="Hugo 0.26" /><link rel="canonical" href="http://blog.slibbe.org/docs/pages/comments/">
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="prefetch stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    
+    <link rel="prefetch stylesheet" type="text/css" href="http://blog.slibbe.org/styles.css">
+
+    <script>var _paq = undefined;</script></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <div id="site-container">
+      <div id="site-header">
+        <header class="small-text-center medium-text-left">
+          <a href="http://blog.slibbe.org">
+            <span id="site-title" itemprop="name">Slibbe&#39;s new Hugo site</span>
+            <br/><span id="site-tagline">A featureful, configurable, yet sleek dark theme for Hugo.</span>
+          </a>
+        </header>
+        <label for="menu-toggle-box"><div id="menu-toggle" class="main-nav no-select"><span><span class="fa fa-bars"></span> MENU</span></div></label>
+        <input type="checkbox" id="menu-toggle-box" class="hide"/>
+        <nav id="main-nav">
+          <ul class="menu"><li class="no-select" itemscope itemtype="http://schema.org/SiteNavigationElement">
+    <input type="checkbox" id="nav-documentation" class="hide"/>
+    <a class="main-nav button active" tabindex="0" href="http://blog.slibbe.org/docs/" >
+      <span>DOCUMENTATION</span><label for="nav-documentation">
+        &nbsp;&nbsp;<span class="nav-arrow">&#9656;</span>
+      </label></a><ul>
+    <li class="no-select" itemscope itemtype="http://schema.org/SiteNavigationElement">
+    <input type="checkbox" id="nav-example-configs" class="hide"/>
+    <a class="main-nav button" tabindex="0" href="http://blog.slibbe.org/docs/example-configs/" >
+      <span>EXAMPLE CONFIGS</span></a></li><li class="no-select" itemscope itemtype="http://schema.org/SiteNavigationElement">
+    <input type="checkbox" id="nav-pages" class="hide"/>
+    <a class="main-nav button active" tabindex="0" href="http://blog.slibbe.org/docs/pages/" >
+      <span>PAGES</span><label for="nav-pages">
+        &nbsp;&nbsp;<span class="nav-arrow">&#9656;</span>
+      </label></a><ul>
+    <li class="no-select" itemscope itemtype="http://schema.org/SiteNavigationElement">
+    <input type="checkbox" id="nav-alert" class="hide"/>
+    <a class="main-nav button" tabindex="0" href="http://blog.slibbe.org/docs/site/alert/#page-specific-alerts" >
+      <span>ALERT</span></a></li><li class="no-select" itemscope itemtype="http://schema.org/SiteNavigationElement">
+    <input type="checkbox" id="nav-authorbox" class="hide"/>
+    <a class="main-nav button" tabindex="0" href="http://blog.slibbe.org/docs/pages/authorbox/" >
+      <span>AUTHORBOX</span></a></li><li class="no-select" itemscope itemtype="http://schema.org/SiteNavigationElement">
+    <input type="checkbox" id="nav-comments" class="hide"/>
+    <a class="main-nav button active" tabindex="0" href="http://blog.slibbe.org/docs/pages/comments/" >
+      <span>COMMENTS</span></a></li><li class="no-select" itemscope itemtype="http://schema.org/SiteNavigationElement">
+    <input type="checkbox" id="nav-customize-list-pages" class="hide"/>
+    <a class="main-nav button" tabindex="0" href="http://blog.slibbe.org/docs/pages/custom-list-pages/" >
+      <span>CUSTOMIZE LIST PAGES</span></a></li><li class="no-select" itemscope itemtype="http://schema.org/SiteNavigationElement">
+    <input type="checkbox" id="nav-netlify-forms" class="hide"/>
+    <a class="main-nav button" tabindex="0" href="http://blog.slibbe.org/docs/pages/netlify-forms/" >
+      <span>NETLIFY FORMS</span></a></li><li class="no-select" itemscope itemtype="http://schema.org/SiteNavigationElement">
+    <input type="checkbox" id="nav-page-navigation" class="hide"/>
+    <a class="main-nav button" tabindex="0" href="http://blog.slibbe.org/docs/pages/next-prev-page/" >
+      <span>PAGE NAVIGATION</span></a></li><li class="no-select" itemscope itemtype="http://schema.org/SiteNavigationElement">
+    <input type="checkbox" id="nav-responsive-tables" class="hide"/>
+    <a class="main-nav button" tabindex="0" href="http://blog.slibbe.org/docs/pages/responsive-tables/" >
+      <span>RESPONSIVE TABLES</span></a></li><li class="no-select" itemscope itemtype="http://schema.org/SiteNavigationElement">
+    <input type="checkbox" id="nav-summaries" class="hide"/>
+    <a class="main-nav button" tabindex="0" href="http://blog.slibbe.org/docs/pages/summaries/" >
+      <span>SUMMARIES</span></a></li>
+    </ul></li><li class="no-select" itemscope itemtype="http://schema.org/SiteNavigationElement">
+    <input type="checkbox" id="nav-shortcodes" class="hide"/>
+    <a class="main-nav button" tabindex="0" href="http://blog.slibbe.org/docs/shortcodes/" >
+      <span>SHORTCODES</span><label for="nav-shortcodes">
+        &nbsp;&nbsp;<span class="nav-arrow">&#9656;</span>
+      </label></a><ul>
+    <li class="no-select" itemscope itemtype="http://schema.org/SiteNavigationElement">
+    <input type="checkbox" id="nav-alert" class="hide"/>
+    <a class="main-nav button" tabindex="0" href="http://blog.slibbe.org/docs/site/alert/#shortcode" >
+      <span>ALERT</span></a></li><li class="no-select" itemscope itemtype="http://schema.org/SiteNavigationElement">
+    <input type="checkbox" id="nav-handwriting-fonts" class="hide"/>
+    <a class="main-nav button" tabindex="0" href="http://blog.slibbe.org/docs/shortcodes/handwriting/" >
+      <span>HANDWRITING FONTS</span></a></li><li class="no-select" itemscope itemtype="http://schema.org/SiteNavigationElement">
+    <input type="checkbox" id="nav-link-to-static-files" class="hide"/>
+    <a class="main-nav button" tabindex="0" href="http://blog.slibbe.org/docs/shortcodes/static/" >
+      <span>LINK TO STATIC FILES</span></a></li><li class="no-select" itemscope itemtype="http://schema.org/SiteNavigationElement">
+    <input type="checkbox" id="nav-members" class="hide"/>
+    <a class="main-nav button" tabindex="0" href="http://blog.slibbe.org/docs/shortcodes/members/" >
+      <span>MEMBERS</span></a></li><li class="no-select" itemscope itemtype="http://schema.org/SiteNavigationElement">
+    <input type="checkbox" id="nav-responsive-tables" class="hide"/>
+    <a class="main-nav button" tabindex="0" href="http://blog.slibbe.org/docs/pages/responsive-tables/" >
+      <span>RESPONSIVE TABLES</span></a></li>
+    </ul></li><li class="no-select" itemscope itemtype="http://schema.org/SiteNavigationElement">
+    <input type="checkbox" id="nav-sidebar" class="hide"/>
+    <a class="main-nav button" tabindex="0" href="http://blog.slibbe.org/docs/sidebar/" >
+      <span>SIDEBAR</span><label for="nav-sidebar">
+        &nbsp;&nbsp;<span class="nav-arrow">&#9656;</span>
+      </label></a><ul>
+    <li class="no-select" itemscope itemtype="http://schema.org/SiteNavigationElement">
+    <input type="checkbox" id="nav-category-list" class="hide"/>
+    <a class="main-nav button" tabindex="0" href="http://blog.slibbe.org/docs/sidebar/category-list/" >
+      <span>CATEGORY LIST</span></a></li><li class="no-select" itemscope itemtype="http://schema.org/SiteNavigationElement">
+    <input type="checkbox" id="nav-events" class="hide"/>
+    <a class="main-nav button" tabindex="0" href="http://blog.slibbe.org/docs/sidebar/events/" >
+      <span>EVENTS</span></a></li><li class="no-select" itemscope itemtype="http://schema.org/SiteNavigationElement">
+    <input type="checkbox" id="nav-patreon-banner" class="hide"/>
+    <a class="main-nav button" tabindex="0" href="http://blog.slibbe.org/docs/sidebar/patreon-banner/" >
+      <span>PATREON BANNER</span></a></li><li class="no-select" itemscope itemtype="http://schema.org/SiteNavigationElement">
+    <input type="checkbox" id="nav-recent-posts" class="hide"/>
+    <a class="main-nav button" tabindex="0" href="http://blog.slibbe.org/docs/sidebar/recent-posts/" >
+      <span>RECENT POSTS</span></a></li><li class="no-select" itemscope itemtype="http://schema.org/SiteNavigationElement">
+    <input type="checkbox" id="nav-search" class="hide"/>
+    <a class="main-nav button" tabindex="0" href="http://blog.slibbe.org/docs/sidebar/search/" >
+      <span>SEARCH</span></a></li><li class="no-select" itemscope itemtype="http://schema.org/SiteNavigationElement">
+    <input type="checkbox" id="nav-tag-list" class="hide"/>
+    <a class="main-nav button" tabindex="0" href="http://blog.slibbe.org/docs/sidebar/tag-list/" >
+      <span>TAG LIST</span></a></li>
+    </ul></li><li class="no-select" itemscope itemtype="http://schema.org/SiteNavigationElement">
+    <input type="checkbox" id="nav-site" class="hide"/>
+    <a class="main-nav button" tabindex="0" href="http://blog.slibbe.org/docs/site/" >
+      <span>SITE</span><label for="nav-site">
+        &nbsp;&nbsp;<span class="nav-arrow">&#9656;</span>
+      </label></a><ul>
+    <li class="no-select" itemscope itemtype="http://schema.org/SiteNavigationElement">
+    <input type="checkbox" id="nav-alert" class="hide"/>
+    <a class="main-nav button" tabindex="0" href="http://blog.slibbe.org/docs/site/alert/" >
+      <span>ALERT</span></a></li><li class="no-select" itemscope itemtype="http://schema.org/SiteNavigationElement">
+    <input type="checkbox" id="nav-analytics" class="hide"/>
+    <a class="main-nav button" tabindex="0" href="http://blog.slibbe.org/docs/site/analytics/" >
+      <span>ANALYTICS</span></a></li><li class="no-select" itemscope itemtype="http://schema.org/SiteNavigationElement">
+    <input type="checkbox" id="nav-appearance" class="hide"/>
+    <a class="main-nav button" tabindex="0" href="http://blog.slibbe.org/docs/site/appearance/" >
+      <span>APPEARANCE</span></a></li><li class="no-select" itemscope itemtype="http://schema.org/SiteNavigationElement">
+    <input type="checkbox" id="nav-social-icons" class="hide"/>
+    <a class="main-nav button" tabindex="0" href="http://blog.slibbe.org/docs/site/social-icons/" >
+      <span>SOCIAL ICONS</span></a></li>
+    </ul></li>
+    </ul></li><li class="no-select" itemscope itemtype="http://schema.org/SiteNavigationElement">
+    <input type="checkbox" id="nav-survey" class="hide"/>
+    <a class="main-nav button" tabindex="0" href="http://blog.slibbe.org/survey/" >
+      <span>SURVEY</span></a></li><li class="no-select" itemscope itemtype="http://schema.org/SiteNavigationElement">
+    <input type="checkbox" id="nav-tutorials" class="hide"/>
+    <a class="main-nav button" tabindex="0" href="http://blog.slibbe.org#" >
+      <span>TUTORIALS</span><label for="nav-tutorials">
+        &nbsp;&nbsp;<span class="nav-arrow">&#9656;</span>
+      </label></a><ul>
+    <li class="no-select" itemscope itemtype="http://schema.org/SiteNavigationElement">
+    <input type="checkbox" id="nav-creating-a-new-theme" class="hide"/>
+    <a class="main-nav button" tabindex="0" href="http://blog.slibbe.org/post/creating-a-new-theme/" >
+      <span>CREATING A NEW THEME</span></a></li><li class="no-select" itemscope itemtype="http://schema.org/SiteNavigationElement">
+    <input type="checkbox" id="nav-migrate-to-hugo-from-jekyll" class="hide"/>
+    <a class="main-nav button" tabindex="0" href="http://blog.slibbe.org/post/migrate-from-jekyll/" >
+      <span>MIGRATE TO HUGO FROM JEKYLL</span></a></li>
+    </ul></li><li class="no-select" itemscope itemtype="http://schema.org/SiteNavigationElement">
+    <input type="checkbox" id="nav-about-hugo" class="hide"/>
+    <a class="main-nav button" tabindex="0" href="http://blog.slibbe.org/about/" >
+      <span>ABOUT HUGO</span></a></li></ul>
+        </nav>
+      </div>
+      <div id="main-container" class="row" role="main" itemprop="mainContentOfPage">
+        
+          <div class="alert small-full">
+            <p>Subscribe to my <a href="https://shadow53.com">programming blog&rsquo;s</a> RSS feed to be notified of updates to this theme.</p>
+          </div>
+        
+        
+        
+<main class="row-item small-full medium-two-thirds" >
+  <article id="post-article" itemscope itemtype="http://schema.org/Article" itemref="desc">
+    <header id="page-header">
+      <h1 itemprop="headline">Comments</h1><p id="post-metadata" class="row"><span class="row-item">
+          <span class="fa fa-folder"></span>
+          <a href="http://blog.slibbe.org/categories/documentation" rel="category">Documentation</a>
+        </span><span class="row-item">Estimated reading time: ~<span itemprop="timeRequired">3 minutes</span></span></p>
+      
+    </header>
+    
+    <div id="post-content"><nav id="TableOfContents">
+<ul>
+<li><a href="#enable-disable-comments-site-wide">Enable/disable comments site-wide</a></li>
+<li><a href="#disable-comments-on-a-specific-page">Disable comments on a specific page</a></li>
+<li><a href="#hashover">Hashover</a>
+<ul>
+<li><a href="#notes">Notes</a></li>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#setup">Setup</a></li>
+<li><a href="#customization">Customization</a></li>
+</ul></li>
+<li><a href="#muut">Muut</a>
+<ul>
+<li><a href="#setup-1">Setup</a></li>
+</ul></li>
+</ul>
+</nav>
+      <span itemprop="articleBody"><p>BluestNight currently supports two comment providers:</p>
+
+<ul>
+<li><a href="comments/hashover">HashOver</a>, a self-hosted provider using PHP</li>
+<li><a href="comments/muut">Muut</a>, a third-party service using only JavaScript</li>
+</ul>
+
+<p>This page details options that apply regardless of which service you are using.</p>
+
+<p></p>
+
+<h1 id="enable-disable-comments-site-wide">Enable/disable comments site-wide</h1>
+
+<p>If you have enabled a certain comment provider in your site configuration file, that comment provider is enabled across the whole site (though it can be disabled on a per-page basis). To disable comments across the whole site, just remove or comment out the option in the configuration file.</p>
+
+<h1 id="disable-comments-on-a-specific-page">Disable comments on a specific page</h1>
+
+<p>To disable comments on a specific page, set <code>disable_comments</code> to <code>true</code> in the page&rsquo;s <a href="http://gohugo.io/content/front-matter/">front matter</a>.</p>
+
+<pre><code>+++
+title = &quot;My Comment-Free Page&quot;
+disable_comments = true
++++
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur tempus tortor, eget bibendum ipsum ultricies sed. Suspendisse arcu enim, porta non sollicitudin quis, gravida ornare nulla. In vel diam felis. Nam neque mauris, facilisis non nibh in, elementum porta libero. Sed dolor arcu, tincidunt non augue porta, euismod lacinia nibh. Sed faucibus risus massa, eget fermentum tortor efficitur a. Donec sed mi sagittis, consectetur nibh eget, mollis dolor. Nulla feugiat sodales dolor non gravida. Integer semper tempor massa id tincidunt.
+</code></pre>
+
+<h1 id="hashover">Hashover</h1>
+
+<p>BluestNight supports using the <a href="http://tildehash.com/?page=hashover">HashOver</a> self-hosted comment system. Note that this comment system <strong>requires PHP</strong> and cannot be used on services that do not support PHP.</p>
+
+<h2 id="notes">Notes</h2>
+
+<ul>
+<li>This guide assumes that you have a server set up to use PHP.**</li>
+<li>All relative paths are relative to the root of your Hugo site
+
+<ul>
+<li>This means that BluestNight is installed to <code>themes/BluestNight</code></li>
+</ul></li>
+</ul>
+
+<h2 id="installation">Installation</h2>
+
+<p>BluestNight has HashOver bundled with it, so you do not need to do anything to &ldquo;install&rdquo; it as of this time. This may change in the future.</p>
+
+<h2 id="setup">Setup</h2>
+
+<ul>
+<li>Copy the file <code>secrets.php</code> from <code>themes/BluestNight/static/hashover/scripts/secrets.php</code> to <code>static/hashover/scripts/secrets.php</code>. This prevents your changes from be overridden on updates to the theme.</li>
+<li>Open <code>static/hashover/scripts/secrets.php</code> in your favorite text editor and find these lines:</li>
+</ul>
+$encryption_key     = '8CharKey';                // Unique 8 to 32 character encryption key
+$notification_email = 'example@example.com';     // E-mail for notification of new comments
+$admin_nickname     = 'admin';                   // Nickname with admin rights (must be title-cased)
+$admin_password     = 'passwd';                  // Password to gain admin rights
+
+<ul>
+<li>Replace the encryption key with a randomly generated key, such as from <a href="http://passwordsgenerator.net/">this generator</a>.</li>
+<li>Replace the notification email with one that you want to receive notifications of new comments.</li>
+<li>Replace the admin password with a <em>secure</em> password that you can use to verify yourself to delete/edit comments and perform other administrative actions.</li>
+</ul>
+
+<h2 id="customization">Customization</h2>
+
+<p>Custom color schemes are applied to HashOver comments.</p>
+
+<h1 id="muut">Muut</h1>
+
+<p>For those who don&rsquo;t want to also host the comments on their site, BluestNight provides support for <a href="https://muut.com/">Muut</a>. For more about the decision to support Muut, <a href="https://shadow53.com/post/new-social-features/#comments-by-muut">click here</a>.</p>
+
+<p><a href="https://muut.com/pricing/">Click here</a> for a current comparison between the free and paid tiers of Muut&rsquo;s service.</p>
+
+<h2 id="setup-1">Setup</h2>
+
+<p>To begin, <a href="https://muut.com/setup/">sign up for a free Muut account</a>. Make sure to keep track of the name you give your Muut Community, as you will need that information later. You may be automatically enrolled in a free trial of a paid subscription. You will be dropped down to a free subscription at the end of the trial.</p>
+
+<p>Remember the name you gave your Muut community? That will go in your site&rsquo;s configuration file as the value for <code>muut</code> under <code>Params</code>:</p>
+
+<pre><code># In config.toml
+
+[Params]
+    muut = &quot;mycommunity&quot;
+</code></pre>
+
+<p>After running <code>hugo</code>, you should now have Muut comments on all pages you <a href="comments">have them enabled on</a>.</p></span>
+    </div></article>
+
+  </main>
+
+        <aside class="row-item small-full medium-third right" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="widget">
+	<header><span class="widget-header"><span class="fa fa-credit-card"></span> Support Me On</span>
+	</header>
+	<a href="https://patreon.com/shadow53"><img id="patreon-banner" src="http://blog.slibbe.org/images/patreon/patreon_white.svg" alt="Patreon Banner" title="Support me on Patreon!" />
+  </a>
+</div>
+  <div class="widget" id="search-container">
+  <header>
+		<span class="widget-header"><span class="fa fa-search"></span> Search</span>
+	</header>
+	<input type="search" name="search" id="searchbox" placeholder="Search..." autocomplete="off"/>
+  <div id="search-results" class="hide"></div>
+</div>
+	<div class="widget">
+	<header>
+		<span class="widget-header"><span class="fa fa-pencil"></span> <a href="http://blog.slibbe.org/post/">Recent Posts</a></span>
+	</header>
+	
+	<a class="widget-header-small button" href="http://blog.slibbe.org/index.xml"><span class="fa fa-rss"></span> Subscribe to the Site</a>
+	<a class="widget-header-small button" href="http://blog.slibbe.org/docs/pages/index.xml"><span class="fa fa-rss"></span> Subscribe to Pages</a><ul><li><a href="http://blog.slibbe.org/post/creating-a-new-theme/">Creating a New Theme</a></li><li><a href="http://blog.slibbe.org/post/goisforlovers/">(Hu)go Template Primer</a></li><li><a href="http://blog.slibbe.org/post/hugoisforlovers/">Getting Started with Hugo</a></li><li><a href="http://blog.slibbe.org/post/migrate-from-jekyll/">Migrate to Hugo from Jekyll</a></li></ul>
+</div>
+  
+	<div class="widget">
+	<header>
+		<span class="widget-header"><span class="fa fa-folder"></span> <a href="http://blog.slibbe.org/categories/">Categories</a></span>
+	</header>
+	<ul><li><a href="http://blog.slibbe.org/categories/documentation">Documentation</a></li>
+		<li><a href="http://blog.slibbe.org/categories/development">Development</a></li>
+		<li><a href="http://blog.slibbe.org/categories/golang">Golang</a></li>
+		
+	</ul>
+</div>
+	<div class="widget">
+	<header>
+		<span class="widget-header"><span class="fa fa-tags"></span> <a href="http://blog.slibbe.org/tags/">Tags</a></span>
+	</header>
+	<div><a class="button" href="http://blog.slibbe.org/tags/development" title="development">
+				development (2)
+			</a><a class="button" href="http://blog.slibbe.org/tags/go" title="go">
+				go (2)
+			</a><a class="button" href="http://blog.slibbe.org/tags/golang" title="golang">
+				golang (2)
+			</a><a class="button" href="http://blog.slibbe.org/tags/hugo" title="hugo">
+				hugo (1)
+			</a><a class="button" href="http://blog.slibbe.org/tags/templates" title="templates">
+				templates (1)
+			</a><a class="button" href="http://blog.slibbe.org/tags/themes" title="themes">
+				themes (1)
+			</a></div>
+</div>
+</aside>
+
+      </div>
+      <footer class="row">
+        <div class="small-full medium-half row-item small-text-center medium-text-left medium-left">
+          <small>
+            &copy; 2017
+            <span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+              <span itemprop="name">Slibbe&#39;s new Hugo site</span>
+            </span>
+          </small>
+        </div>
+        
+        <div class="small-full medium-half row-item small-text-center medium-text-right" id="social-icons">
+          
+          
+          
+          <a href="https://gitlab.com/Shadow53/BluestNight" rel="me nofollow">
+            <span class="fa fa-gitlab"></span>
+          </a>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+        </div>
+      </footer>
+    </div><script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="http://blog.slibbe.org/js/search.js" type="text/javascript"></script>
+    
+    <script>
+      var lunrIndex = undefined;
+      loadIndex("http:\/\/blog.slibbe.org\/index.json").then(
+        function(index) { lunrIndex = index; },
+        function(status){}
+      );
+    </script></body>
+</html>

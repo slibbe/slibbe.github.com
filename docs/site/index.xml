@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docs: Site on Slibbe&#39;s new Hugo site</title>
+    <link>http://blog.slibbe.org/docs/site/</link>
+    <description>Recent content in Docs: Site on Slibbe&#39;s new Hugo site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://blog.slibbe.org/docs/site/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Alert</title>
+      <link>http://blog.slibbe.org/docs/site/alert/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.slibbe.org/docs/site/alert/</guid>
+      <description>&lt;p&gt;Use an &lt;code&gt;alert&lt;/code&gt; if you need to make sure that your reader&amp;rsquo;s eye is brought to some important information before they get to the main content. You can have site-wide and page-specific alerts, which work the same except for where they are set.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Analytics</title>
+      <link>http://blog.slibbe.org/docs/site/analytics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.slibbe.org/docs/site/analytics/</guid>
+      <description>&lt;p&gt;BluestNight comes with support for &lt;a href=&#34;https://piwik.org/&#34;&gt;Piwik&lt;/a&gt; as an site analytics provider. This requires having a Piwik instance hosted somewhere, either &lt;a href=&#34;https://piwik.org/download/&#34;&gt;self-hosted&lt;/a&gt; or &lt;a href=&#34;https://www.innocraft.cloud/&#34;&gt;hosted by Innocraft&lt;/a&gt;. The theme uses the &lt;a href=&#34;https://developer.piwik.org/guides/tracking-javascript-guide&#34;&gt;JavaScript tracking client&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Appearance</title>
+      <link>http://blog.slibbe.org/docs/site/appearance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.slibbe.org/docs/site/appearance/</guid>
+      <description>Custom Background Add the following to your site&amp;rsquo;s config.toml file:
+[Params.background] src = &amp;quot;images/background_lg.png&amp;quot; #medium_src = &amp;quot;images/background_med.png&amp;quot; #small_src = &amp;quot;images/background_sm.png&amp;quot; fit_width = true tile = false   Change src to the relative path from the site&amp;rsquo;s baseURL where the background image can be found. In the above example, the file would be found at {site root}/static/images/background.png. Optionally set medium_src and small_src to smaller images to use on screens that are at most 1024px and 640px, respectively.</description>
+    </item>
+    
+    <item>
+      <title>Social Icons</title>
+      <link>http://blog.slibbe.org/docs/site/social-icons/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.slibbe.org/docs/site/social-icons/</guid>
+      <description>&lt;p&gt;Social icons are an easy way to link viewers of your site to other parts of your online presence, such as to your Facebook, Twitter, LinkedIn, GitHub, and more. The complete list is below.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

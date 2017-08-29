@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docs: Sidebar on Slibbe&#39;s new Hugo site</title>
+    <link>http://blog.slibbe.org/docs/sidebar/</link>
+    <description>Recent content in Docs: Sidebar on Slibbe&#39;s new Hugo site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://blog.slibbe.org/docs/sidebar/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Category List</title>
+      <link>http://blog.slibbe.org/docs/sidebar/category-list/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.slibbe.org/docs/sidebar/category-list/</guid>
+      <description>&lt;p&gt;Add a list of your five most common categories to the sidebar.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Events</title>
+      <link>http://blog.slibbe.org/docs/sidebar/events/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.slibbe.org/docs/sidebar/events/</guid>
+      <description>&lt;p&gt;You have a list of events you want to share with your reader base - why not display them on your site?&lt;/p&gt;
+
+&lt;p&gt;BluestNight provides both a sidebar widget to display the 5 earliest occurring events listed and a template for a &lt;code&gt;.ics&lt;/code&gt; calendar file that readers can subscribe to.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Patreon Banner</title>
+      <link>http://blog.slibbe.org/docs/sidebar/patreon-banner/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.slibbe.org/docs/sidebar/patreon-banner/</guid>
+      <description>&lt;p&gt;Have a Patreon account? Add a Patreon banner to the sidebar of your site that links to it!&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Recent Posts</title>
+      <link>http://blog.slibbe.org/docs/sidebar/recent-posts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.slibbe.org/docs/sidebar/recent-posts/</guid>
+      <description>&lt;p&gt;Display your most recent posts in the sidebar!&lt;/p&gt;
+
+&lt;p&gt;The recent article sidebar widget displays the ten most recent pages under the &lt;code&gt;post&lt;/code&gt; &lt;a href=&#34;http://gohugo.io/content/sections/&#34;&gt;section&lt;/a&gt;, as well as buttons to subscribe to the RSS feeds of the whole site and the current section or taxonomy (tag/category).&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Search</title>
+      <link>http://blog.slibbe.org/docs/sidebar/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.slibbe.org/docs/sidebar/search/</guid>
+      <description>&lt;p&gt;BluestNight offers client-side searching powered by &lt;a href=&#34;https://lunrjs.com&#34;&gt;Lunr.js&lt;/a&gt;. This searching is powered by a JSON index of your site&amp;rsquo;s content pages - this does not include any list pages, even ones &lt;a href=&#34;pages/customize-list-pages&#34;&gt;customized using &lt;code&gt;_index.md&lt;/code&gt;&lt;/a&gt;. Results are displayed as you type, allowing users to quickly find what they are looking for.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Tag List</title>
+      <link>http://blog.slibbe.org/docs/sidebar/tag-list/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.slibbe.org/docs/sidebar/tag-list/</guid>
+      <description>&lt;p&gt;Show a cloud of the tags you&amp;rsquo;ve used on the site in your sidebar.&lt;/p&gt;
+
+&lt;p&gt;This widget currently shows all of the tags used on the website, in order of how often they are used (most common listed first, etc.) You can optionally enable showing how many times the tag has been used.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docs: Pages on Slibbe&#39;s new Hugo site</title>
+    <link>http://blog.slibbe.org/docs/pages/</link>
+    <description>Recent content in Docs: Pages on Slibbe&#39;s new Hugo site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://blog.slibbe.org/docs/pages/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Authorbox</title>
+      <link>http://blog.slibbe.org/docs/pages/authorbox/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.slibbe.org/docs/pages/authorbox/</guid>
+      <description>&lt;p&gt;Use the authorbox to provide attribution to the author of a post or page.&lt;/p&gt;
+
+&lt;p&gt;The authorbox feature is based on the &lt;a href=&#34;shortcodes/members&#34;&gt;&lt;code&gt;member&lt;/code&gt; shortcode&lt;/a&gt; and requires the same &lt;a href=&#34;shortcodes/members#setup&#34;&gt;setup&lt;/a&gt; in order to work.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; if the &lt;code&gt;URL&lt;/code&gt; key is set in the author&amp;rsquo;s data file, the &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt; tag linking to the URL will have the &lt;code&gt;rel=&amp;quot;author&amp;quot;&lt;/code&gt; attribute set on it.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Comments</title>
+      <link>http://blog.slibbe.org/docs/pages/comments/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.slibbe.org/docs/pages/comments/</guid>
+      <description>&lt;p&gt;BluestNight currently supports two comment providers:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;comments/hashover&#34;&gt;HashOver&lt;/a&gt;, a self-hosted provider using PHP&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;comments/muut&#34;&gt;Muut&lt;/a&gt;, a third-party service using only JavaScript&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This page details options that apply regardless of which service you are using.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Customize List Pages</title>
+      <link>http://blog.slibbe.org/docs/pages/custom-list-pages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.slibbe.org/docs/pages/custom-list-pages/</guid>
+      <description>&lt;p&gt;BluestNight provides a number of ways for you to customize &lt;a href=&#34;https://gohugo.io/templates/list/&#34;&gt;list pages&lt;/a&gt; using &lt;a href=&#34;https://gohugo.io/content/using-index-md/&#34;&gt;&lt;code&gt;_index.md&lt;/code&gt;&lt;/a&gt; files.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Netlify Forms</title>
+      <link>http://blog.slibbe.org/docs/pages/netlify-forms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.slibbe.org/docs/pages/netlify-forms/</guid>
+      <description>&lt;p&gt;If you are using &lt;a href=&#34;https://netlify.com&#34;&gt;Netlify&lt;/a&gt; to host your Hugo site, BluestNight supports creating &lt;a href=&#34;https://www.netlify.com/docs/form-handling/&#34;&gt;Netlify-compatible&lt;/a&gt; forms in your content files through the use of a few shortcodes.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Page Navigation</title>
+      <link>http://blog.slibbe.org/docs/pages/next-prev-page/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.slibbe.org/docs/pages/next-prev-page/</guid>
+      <description>&lt;p&gt;BluestNight supports using the Hugo built-in &lt;code&gt;NextInSection&lt;/code&gt; and &lt;code&gt;PrevInSection&lt;/code&gt; [page variables] to provide &amp;ldquo;next&amp;rdquo; and &amp;ldquo;previous&amp;rdquo; links to the next and previous page in the same &lt;a href=&#34;https://gohugo.io/content/sections/&#34;&gt;section&lt;/a&gt;. On its own, this works great for linking a reader to next oldest or newest post from the one they have just finished reading.&lt;/p&gt;
+
+&lt;p&gt;Sometimes you want a specific order to your pages, though, and that&amp;rsquo;s not the one that Hugo gives you. So, BluestNight also gives you the option to specify a custom content file to use as the &amp;ldquo;next&amp;rdquo; or &amp;ldquo;previous&amp;rdquo; page, as well as the ability to not show one or both buttons, even if there is a valid &amp;ldquo;next&amp;rdquo; or &amp;ldquo;previous&amp;rdquo; page.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Responsive Tables</title>
+      <link>http://blog.slibbe.org/docs/pages/responsive-tables/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.slibbe.org/docs/pages/responsive-tables/</guid>
+      <description>The markdown processor bundled with Hugo has the ability to parse markdown tables, but these tables are not mobile-friendly (like most tables).
+This didn&amp;rsquo;t work well for me, since my markdown tables were rendering poorly on mobile devices due to automatic content sizing. More often than not, the table ended up overflowing and looking unprofessional. So I put together a set of shortcodes to help create tables that would shift around on small screens to be more readable.</description>
+    </item>
+    
+    <item>
+      <title>Summaries</title>
+      <link>http://blog.slibbe.org/docs/pages/summaries/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.slibbe.org/docs/pages/summaries/</guid>
+      <description>&lt;p&gt;Hugo &lt;a href=&#34;https://gohugo.io/content/summaries/&#34;&gt;provides a mechanism&lt;/a&gt; for extracting the first part of a page&amp;rsquo;s content to serve as a &amp;ldquo;summary&amp;rdquo; of the content. This works if the first bit of content serves as a good summary of the rest of the page. Sometimes, though, it doesn&amp;rsquo;t. There&amp;rsquo;s no built-in method for providing your own text as a &amp;ldquo;summary&amp;rdquo; - but there is in BluestNight.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

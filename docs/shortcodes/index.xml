@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docs: Shortcodes on Slibbe&#39;s new Hugo site</title>
+    <link>http://blog.slibbe.org/docs/shortcodes/</link>
+    <description>Recent content in Docs: Shortcodes on Slibbe&#39;s new Hugo site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://blog.slibbe.org/docs/shortcodes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Handwriting Fonts</title>
+      <link>http://blog.slibbe.org/docs/shortcodes/handwriting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.slibbe.org/docs/shortcodes/handwriting/</guid>
+      <description>&lt;p&gt;Sometimes (sans-)serif fonts just don&amp;rsquo;t cut it for what you&amp;rsquo;re writing. You&amp;rsquo;re posting a letter on your website and want it to look handwritten, or at least have the signature look handwritten. The &lt;code&gt;handwriting&lt;/code&gt; shortcode provides you with a number of available handwriting fonts to achieve this effect.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Link To Static Files</title>
+      <link>http://blog.slibbe.org/docs/shortcodes/static/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.slibbe.org/docs/shortcodes/static/</guid>
+      <description>(Examples use a file at /static/path/to/image.jpg)
+There&amp;rsquo;s a limitation with the way links are created in markdown. In order to link to static files in content files, we need to either:
+ Write a path relative to the current directory, with ../ and the like, so a file at content/section/subsection/page.md would need ../../../path/to/image.jpg
+ Prefix the path with a leading /, which causes the path to resolve to example.com/path/to/image.jpg
+  The first is a pain to have to do, and the second only works if the baseURL of your Hugo site is example.</description>
+    </item>
+    
+    <item>
+      <title>Members</title>
+      <link>http://blog.slibbe.org/docs/shortcodes/members/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.slibbe.org/docs/shortcodes/members/</guid>
+      <description>&lt;p&gt;Looking to put together a nice Members page for your site, but don&amp;rsquo;t want to write a bunch of custom HTML to make it look good?&lt;/p&gt;
+
+&lt;p&gt;Just use the &lt;code&gt;{{&amp;lt;/* member */&amp;gt;}}&lt;/code&gt; shortcode!&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
